@@ -7,4 +7,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route ::get('products/index', [ProductController::class, 'index'])->name('products.index');
+Route::get('products/index', [ProductController::class, 'index'])->name('products.index');

@@ -10,6 +10,6 @@
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
     <body>
-        <a href="{{route('products.index)}">Listado de productos</a>
+        <a href="{{route('products.index')}}">Listado de productos</a>
     </body>
 </html>
