@@ -20,9 +20,11 @@ class ProductController extends Controller
             })
             ->where('attributes', function($query){
                 $query->where('attributes.name', 'size')
-                    ->where('attribute_product.value')
-            }
-        
+                    ->where('attribute_product.value', 'S');
+            })
+            ->with('attributes')
+            ->get();
+
         return view('products.index', compact('products'));
     }
 }

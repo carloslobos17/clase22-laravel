@@ -21,9 +21,10 @@ class AttributeSeeder extends Seeder
             'name' => 'size'
         ]
         ];
+        foreach ($attributes as $attribute) {
+            Attribute::query()->create($attribute);
+        }
     }
+    
 }
 
-    foreach ($attributes as $attribute) {
-        Attribute::query()->create($attribute);
-    }

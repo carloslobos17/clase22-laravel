@@ -15,8 +15,10 @@
                 <tr>
                     <td>{{$product->name}}</td>
                     <td>{{$product->description}}</td>
-                    <td>{{$product->color}}</td>
-                    <td>{{$product->size}}</td>
+                    <!-- <td>{{$product->color}}</td>
+                    <td>{{$product->size}}</td> -->
+                @foreach ($product->attributes as $attribute)
+                    <td>{{$attribute->pivot->value}}</td>
                 </tr>
                 @endforeach
         </tbody>
